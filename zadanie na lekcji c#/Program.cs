@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -62,7 +62,7 @@ namespace zadanie_na_lekcji_c_{
             foreach (string str in words){
                 Console.WriteLine(str + " ");
             }
-            Console.WriteLine();
+            Console.WriteLine("zad 4");
 
             // zad 4
             Queue queueOfFIb = new Queue();
@@ -91,10 +91,44 @@ namespace zadanie_na_lekcji_c_{
             foreach (int num in queueOfFIb){
                 Console.WriteLine(num + " ");
             }
-            Console.WriteLine();
+            Console.WriteLine("zad 5");
 
             // zad 5
+            Stack primeStack = new Stack();
+            int iter = 0;
+            for (int i = 10; i < 100; i++){
+                if (isPrime(i)){
+                    primeStack.Push(i);
+                    iter++;
+                }
+                if (iter == 5){
+                    break;
+                }
+            }
+            foreach (int num in primeStack){
+                Console.WriteLine(num + " ");
+            }
+            Console.WriteLine();
+
+            primeStack.Pop();
+            primeStack.Pop();
+            primeStack.Pop();
+
+            foreach (int num in primeStack)
+            {
+                Console.WriteLine(num + " ");
+            }
+            Console.WriteLine();
+
             Console.ReadKey();
+        }
+        public static bool isPrime(int num){
+            for (int i = 2; i < num; i++){
+                if (num % i == 0){
+                    return false;
+                }
+            }
+            return true;
         }
     }
     // zad 2
