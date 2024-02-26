@@ -1,0 +1,5 @@
+Jan;Kowalski;51
+Ana;Kowalska;39
+Bartosz;Kowalski;21
+Janek;Kowalski;15
+Alex;Kowalski;16
