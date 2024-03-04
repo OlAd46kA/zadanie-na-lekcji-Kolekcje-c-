@@ -24,3 +24,5 @@ Wyświetl kolejkę, usuń z niej 2 elementy i wyświetl pozostałe 2
 5. Stwórz stos (stack) 5 kolejnych dwucyfrowych liczb pierwszych.
 Wyświetl stos, usuń 3 wyrazy i zwów wyświetl stos.
 
+6. Stwórz jakiś prosty graf 1 => 2, 3 ; 2 => 3 ; 3 => 2, 5 ; 4 => null ; 5 => 3
+używając Dictionary=
