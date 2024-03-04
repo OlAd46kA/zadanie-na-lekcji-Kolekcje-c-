@@ -140,7 +140,7 @@ namespace zadanie_na_lekcji_c_{
 foreach (var item in graf){
     Console.WriteLine(item.Key + " ");
     foreach (var item2 in graf){
-        Console.WriteLine(item + " ");
+        Console.WriteLine(item.Value + " ");
     }
     Console.WriteLine();
 }
