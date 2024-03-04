@@ -119,7 +119,31 @@ namespace zadanie_na_lekcji_c_{
                 Console.WriteLine(num + " ");
             }
             Console.WriteLine();
+            // zad 6
+            Dictionary<int, List<int> > graf = new Dictionary<int, List<int> >();
+            int n = int.Parse(Console.ReadLine());
+            for (int i = 1; i <= n; i++){
+                graf.Add(i, new List<int>());
+            }
+            int k = int.Parse(Console.ReadLine());
+            
+            string[] Liczby;
+            int a, b;
+            for (int i = 0; i < k; i++){
+                Liczby = Console.ReadLine().Split();
+                a = int.Parse(Liczby[0]);
+                b = int.Parse(Liczby[1]);
+                graf[a].Add(b);
+                graf[b].Add(a);
+            }
 
+foreach (var item in graf){
+    Console.WriteLine(item.Key + " ");
+    foreach (var item2 in graf){
+        Console.WriteLine(item + " ");
+    }
+    Console.WriteLine();
+}
             Console.ReadKey();
         }
         public static bool isPrime(int num){
